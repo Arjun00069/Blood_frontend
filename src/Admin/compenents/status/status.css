@@ -1,0 +1,20 @@
+.hedder{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+
+}
+.hospusers{
+    background: white;
+}
+.status{
+    padding: 8px !important;
+border-radius: 9px !important;
+display: flex !important;
+flex-direction: column !important;
+justify-content: space-evenly !important;
+}
+.compactCard{
+    height: 10rem !important;
+}

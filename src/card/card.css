@@ -1,0 +1,42 @@
+/* Add this CSS to a separate CSS file, e.g., Card.css, and import it in your component */
+
+.main-cards {
+   margin: 2.9rem;
+   height:190px;
+   width: 200px;
+  }
+  
+  .card {
+    background: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 200px;
+  }
+  
+  .card-inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .card h3 {
+    font-size: 18px;
+    margin: 0;
+  }
+  
+  .card_icon {
+    font-size: 32px;
+    color: #007bff; /* You can change the color to your preference */
+  }
+  
+  .card h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+    color: #333;
+  }
+  

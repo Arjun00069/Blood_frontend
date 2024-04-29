@@ -1,0 +1,117 @@
+.contactbody{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background-image: url('../../../assets/contactbg.jpg'   );
+  background-size: cover;
+  padding-top: 3%;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.form-box {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.form-box:hover {
+  transform: scale(0.92);
+}
+
+.form-container {
+  max-width: 400px;
+  width: 100%;
+  padding: 4rem;
+  /* background-color: #f73333; */
+  background-image: url('../../../assets/contactbg.jpg' );
+  background-size: cover;
+  border-radius: 8px;
+  box-shadow: 20px 20px 20px rgba(18, 9, 9, 0.1);
+}
+
+.form-container h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #333333;
+}
+
+.form-container label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  color: #555555;
+}
+
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+  margin-bottom: 2rem;
+  transition: border-color 0.3s ease;
+  resize: vertical;
+}
+
+.form-container input:focus,
+.form-container textarea:focus {
+  outline: none;
+  border-color: rgb(0, 0, 0);
+}
+
+.error-message {
+  color: #d18484;
+  font-size: 0.875rem;
+  margin-top: 0.25rem;
+}
+
+.submit-button {
+  width: 50%;
+  padding: 0.75rem;
+  font-size: large;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 20px 20px 20px rgba(18, 9, 9, 0.1);
+}
+
+.submit-button:hover {
+  background-color: #e86d86;
+}
+
+/* INFOBOX */
+.info-box {
+  max-width: 700px;
+  width: 100%;
+  padding: 4rem;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(14, 0, 0, 0.1);
+  margin-right: 20px;
+}
+
+.info-heading {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.info-text {
+  color: #555;
+}

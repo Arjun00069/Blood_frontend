@@ -1,0 +1,23 @@
+
+.buttosec{
+    display: flex;
+    margin-left: 5%;
+    color: rgb(141, 70, 70);
+    font-family: Raanana;
+    >button{
+  margin-left: 5px;
+    }
+  }
+  .button {
+    background-color: #0074d9; /* Default button background color */
+    color: #fff; /* Default button text color */
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Transition for smooth highlighting effect */
+  }
+  
+  button.highlighted {
+    background-color: #ff851b; /* Highlighted button background color */
+    /* You can customize the highlighted styles here */
+  }

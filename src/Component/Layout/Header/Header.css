@@ -1,0 +1,29 @@
+.speedDial {
+    position: fixed;
+    right: 3vmax;
+    top: 3vmax;
+  }
+  
+  .speedDialIcon {
+    width: 56px;
+    height: 56px;
+    border-radius: 100%;
+  }
+
+  .menuBurger{
+    height: 3.5vmax !important;
+  }
+
+
+  .nav1, .nav2, .nav3, .nav4 {
+    height: 14vh !important;
+    top: 0px;
+    background-color: transparent !important;
+    z-index: 12 !important;
+  }
+  
+  .logoReactNavbar{
+    height: 6vh !important;
+    width: 13vmax !important;
+
+  }

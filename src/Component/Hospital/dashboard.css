@@ -1,0 +1,23 @@
+.cardcontainer{
+    display: flex;
+}
+.bargraph {
+    width: 50%; /* Set the width to 50% */
+    margin: 0 auto; /* Center the graph horizontally */
+  }
+  
+  .graphContainer{
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  @keyframes imgUp {
+    to {
+      transform: translateY(-10px);
+    }
+  }
+  .card{
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+
+  

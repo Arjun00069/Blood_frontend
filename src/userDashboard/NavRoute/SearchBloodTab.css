@@ -1,0 +1,64 @@
+/* Variables */
+:root {
+    --red: rgb(156, 0, 60);
+    --reddark: rgb(126, 0, 40);
+    --dark: rgb(33,33,33);
+    --light: rgba(33,33,33,0.71);
+    --pink: rgb(250, 233, 239);
+  }
+  
+  /* .tableClass */
+  .tableClass {
+      margin-top: 0rem;
+      width: 100%;
+      height: auto;
+  }
+  .tableClass > main {
+      max-width: 1000px;
+      background-color: white;
+      overflow-y: auto visible;
+      overflow-y: scroll;
+      max-height: 400px;
+      padding: 1rem;
+      overflow-x: auto;
+  }
+  .tableClass > main > table {
+      width: 100%;
+      text-align: center;
+      border-collapse: collapse;
+  }
+  .tableClass > main > table tr {
+      background-color: whitesmoke;
+  }
+  .tableClass > main > table tr:last-child td:first-child {
+      border-radius: 0 0 0 10px;
+  }
+  .tableClass > main > table tr:last-child td:last-child {
+      border-radius: 0 0 10px 0;
+  }
+  .tableClass > main > table td,
+  .tableClass > main > table th {
+      padding: 1rem;
+  }
+  .tableClass > main > table td > a {
+      color: var(--red);
+  }
+  .tableClass > main > table th {
+      background-color: var(--dark);
+      color: white;
+  }
+  .tableClass > main > table th:first-child {
+      border-radius: 10px 0 0 0;
+  }
+  .tableClass > main > table th:last-child {
+      border-radius: 0 10px 0 0;
+  }
+  
+  /* button */
+  button {
+      border: none;
+      cursor: pointer;
+      margin: 0.25rem;
+      color: red;
+  }
+  

@@ -1,0 +1,58 @@
+.signUpForm {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 15rem !important;
+  padding: 2vmax;
+  justify-content: flex-start;
+  min-height: 110%;
+  max-height: 500%;
+  overflow: auto; 
+  transition: all 0.5s;
+}
+
+.signUpForm > div {
+  display: flex;
+  width: 100%;
+  align-items: center;
+}
+
+.signUpForm > div > input,
+.signUpForm > div > select {
+  padding: 1vmax 4vmax;
+  padding-right: 1vmax;
+  width: 100%;
+  box-sizing: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.267);
+  border-radius: 4px;
+  font: 300 0.9vmax cursive;
+  outline: none;
+}
+
+#registerImage > img {
+  width: 3vmax;
+  border-radius: 100%;
+}
+
+#registerImage > input {
+  display: flex;
+  padding: 0%;
+}
+
+#registerImage > input::file-selector-button {
+  cursor: pointer;
+  width: 100%;
+  z-index: 2;
+  height: 5vh;
+  border: none;
+  margin: 0%;
+  font: 400 0.8vmax cursive;
+  transition: all 0.5s;
+  padding: 0 1vmax;
+  color: rgba(0, 0, 0, 0.623);
+  background-color: rgb(255, 255, 255);
+}
+
+#registerImage > input::file-selector-button:hover {
+  background-color: rgb(235, 235, 235);
+}

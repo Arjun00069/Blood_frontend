@@ -1,0 +1,570 @@
+:root {
+  --backgroundColor: white;
+  --main-color: #ea2f2f;
+  --secondcolor: #2c3e50;
+  --text-color: #414141;
+  --other-color: #bac1d2;
+}
+  
+  body {
+    background-color: var(--backgroundColor);
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a{
+    text-decoration: none;
+    color: var(secondcolor);
+    font-weight: bold;
+  }
+  h2 {
+    color: var(secondcolor);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  .button {
+    display: inline-block;
+    background: none;
+    border: 2px solid var(--main-color);
+    color: var(--main-color);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    /* -webkit-box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6); */
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    font-size: 1em;
+    /* -webkit-transition: 0.3s ease-in; */
+    /* transition of button on hover */
+    transition: 0.3s ease-in;
+  }
+  
+  .button:hover {
+    color: white;
+    background-color: var(--main-color);
+  }
+  
+  .button:active {
+    position: relative;
+    top: 1px;
+  }
+  
+  .dark {
+    background-color: var(--main-color);
+    color: #fff;
+  }
+  
+  .icon {
+    position: absolute;
+    top: 5%;
+    right: 25%;
+  }
+  
+  .icon::after {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    font-size: 30px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
+  
+  .icon--error::after {
+    content: "\f00d";
+    color: var(--main-color);
+  }
+  
+  .grid {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+  }
+  
+    /* /----------------------* NAVBAR ------------ */ 
+      .topnav {
+    background-color:  rgb(250, 56, 56);
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    }
+    
+    /* Style the links inside the navigation bar */
+    .topnav a {
+    
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin: 0px 16px;
+    transition-duration: 250ms;
+    
+    }
+    
+    /* Change the color of links on hover */
+    .topnav a:hover {
+    /* background-color: #ddd;
+    color: black; */
+    scale: 1.08;
+    text-decoration: underline;
+    
+    }
+    #logo{
+    position: absolute;
+    left: 2.5%;
+    width: 12%;
+    height: 47px;
+    border-radius: 63px;
+    transition-duration: 350ms;
+    }
+    #logo:hover{
+    scale: 1.08;
+    }
+    @media(max-width:997px){
+      .topnav{
+        flex-wrap: wrap;
+      }
+      #logo{
+        position: initial;
+        width: 25%;
+      }
+      .topnav a{
+        width: 17%;
+      }
+    }
+    @media(max-width:414px){
+     #logo{
+     
+      width: 53%;
+    }
+      .topnav a{
+    width: 25%;
+      }
+     
+    }
+    /* headder  */
+
+    .mainheader {
+        margin-bottom: 4em;
+        display: -ms-grid;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+      }
+    
+      .headerdescription {
+        width: 90%;
+        height: 400px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        padding: 0 1em;
+      }
+    
+      .headerdescription h2 {
+        color: var(secondcolor);
+        font-size: 2.6em;
+        margin: 0.5em 0;
+        font-weight: bold;
+      }
+      
+      .headerdescription h2 span {
+        color: var(--main-color);
+      }
+      
+      .headerdescription p {
+        margin: 0;
+        color: var(--text-color);
+        font-size: 1.2em;
+      }
+      
+      .headerdescription p span {
+        font-weight: 600;
+      }
+      
+      .headerdescription a {
+        margin: 1.4em;
+        text-align: center;
+      }
+      
+      .headerimage{
+        width: 100%;
+        text-align: center;
+      }
+
+      /* headder end */
+
+
+    /* Aboutus ----->content */
+    .aboutus{
+       
+      /* background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%); */
+     
+display: flex;
+
+/* background-image: url("/site/themes/savelife/assets/images/bg/dots.webp"); */
+justify-content: center;
+
+    }
+    
+    .a_image img{
+     height:66%;
+     width: 90%;
+     margin: 19% 0%;
+     animation: beat1 1s infinite alternate 
+    }
+    @keyframes beat1 {
+      0%{
+        transform: scale(1);
+      }
+     50%{
+      transform: scale(1.04);
+     }
+      100%{
+        transform: scale(1);
+      }
+    }
+    .a_content{
+      margin: 27px 9px;
+      width: 45%;
+    }
+    .a_content p{
+      color: gray;
+    }
+    /* Services------- */
+    /* title */
+    .services{
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(245, 245, 247);
+    }
+    .title{
+      text-align: center;
+      margin: 4px 0px;
+    }
+    .title p{
+      
+      font-size: 2.4rem;
+      margin: 12px 0px;
+    }
+    
+    /* steps */
+    .stepbox{
+      display: flex;
+      justify-content: center;
+      margin: 16px 0px;
+      width: 50%;
+    }
+    .stepnumber{
+      font-size: 100px;
+      color:gray
+    }
+    .stepinfo{
+
+    margin: 0px 27px;
+    }
+    .stepname{
+      font-size: 2.2rem;
+      color: gray;
+      
+    }
+    .stepinfo p{
+      color: rgb(92, 92, 92);
+    }
+    .stepname img{
+      height: 4%;
+      width: 4%;
+    }
+    .stepcolumn{
+      display: flex;
+flex-direction: column;
+justify-content: space-around;
+align-items: center;
+margin: 5% 0%;
+    }
+
+
+   
+/* cards */
+
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700');
+
+/* Design */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: #ecf9ff;
+}
+
+/* body {
+  color: #272727;
+  font-family: 'Quicksand', serif;
+  font-style: normal;
+  font-weight: 400;
+  letter-spacing: 0;
+  padding: 1rem;
+} */
+
+.main{
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+
+img {
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+.btn {
+  color: #ffffff;
+  padding: 0.8rem;
+  font-size: 14px;
+  text-transform: uppercase;
+  border-radius: 4px;
+  font-weight: 400;
+  display: block;
+  width: 100%;
+  cursor: pointer;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: transparent;
+}
+
+.btn:hover {
+  background-color: rgba(255, 255, 255, 0.12);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.card_content {
+  padding: 1rem;
+  background: linear-gradient(to bottom left, #EF8D9C 40%, #FFC39E 100%);
+}
+
+.card_title {
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  margin: 0px;
+}
+
+.card_text {
+  color: #ffffff;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  margin-bottom: 1.25rem;    
+  font-weight: 400;
+}
+.made_by{
+  font-weight: 400;
+  font-size: 13px;
+  margin-top: 35px;
+  text-align: center;
+}
+/* moreinfo */
+/* .moreinfo{
+  background-image: url('infoimage.png');
+} */
+ .hedding{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+ }
+ #p1{
+  color: rgb(251, 105, 105);
+font-size: 4.2rem;
+margin-bottom: 0px;
+
+ }
+
+  #p2 {
+    width: 52%;
+    text-align: center;
+}
+
+  .card1 {
+    display: flex;
+flex-direction: column;
+width: 22%;
+height: 200px;
+align-items: center;
+margin: 33px;
+transition-duration: 350ms;
+border: 1px solid rgb(236, 234, 234);
+border-radius: 11px;
+background-color: rgb(246, 244, 244);
+}
+.card1 img{
+  height: 17%;
+}
+.card1 p{
+  text-align: center;
+margin: 0px 8px;
+}
+.infocards{
+  display: flex;
+flex-wrap: wrap;
+justify-content: center;
+}
+
+.card1:hover{
+  background-color: whitesmoke;
+  scale: 1.08;
+  box-shadow: inset;
+}
+
+/* footer  */
+
+
+.footer {
+    width: 100%;
+  }
+  .footer__containers {
+    width: 100%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 4em;
+    justify-content: center;
+    align-items: center;
+  }
+  .footer__h2 {
+    font-size: 2.1em;
+    color: #2c3e50;
+  }
+  .footer__h2:first-letter {
+    color: var(--main-color);
+  }
+  
+  .footer__h3 {
+    width: 71%;
+    font-size: 2.1em;
+    padding-bottom: 0.5em;
+    border-bottom: 3px solid var(--main-color);
+    color: #2c3e50;
+  }
+  
+  .footer__p {
+    color: var(--text-color);
+  }
+  .footer__icons span {
+    padding-right: 1em;
+    font-size: 1.3em;
+  }
+  .footer__icons span i {
+    transition: 0.4s ease-in-out;
+  }
+  .footer__icons span:hover i {
+    color: var(--main-color);
+    cursor: pointer;
+  }
+  
+  .footer__input {
+    border-radius: 29px;
+    background: #dfe6e9;
+    height: 57px;
+    width: 60%;
+    padding-left: 1.5em;
+    font-size: 1.2em;
+  }
+  .footer__containers form .button {
+    padding: 0.6em 0.9em;
+    font-weight: 600;
+    letter-spacing: 1.3;
+  }
+  .footer__quotes {
+    width: 100%;
+    margin: 0;
+    background: var(--main-color);
+    text-align: center;
+  }
+  .quotes {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0.9em 0;
+    color: #fff;
+  }
+  
+
+  /* Add this to your CSS file or component styles */
+.blood-bank-box {
+  background-color: #f5f5f7;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.blood-bank-box h1 {
+  color: #333;
+}
+
+.blood-bank-box .content {
+  margin-top: 20px;
+}
+
+.blood-bank-box h3 {
+  color: #ea2f2f;
+}
+
+.blood-bank-box p {
+  color: #414141;
+}
