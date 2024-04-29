@@ -28,7 +28,6 @@ import AboutUsPage from './Component/Layout/About/AboustUsPage';
 
 import MainDash from "./userDashboard/Maindash" 
 
-
 function App() {
 
     //we have both isauthenticated and user in user state
