@@ -34,8 +34,6 @@ function App() {
     const {user,isAuthenticated}=useSelector(state=>state.user);
     const  hosp=useSelector(state=>state.hospital)
     
-
-
   React.useEffect(()=>{
     WebFont.load({
       google:{
